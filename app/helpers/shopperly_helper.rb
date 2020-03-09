@@ -1,0 +1,2 @@
+module ShopperlyHelper
+end
