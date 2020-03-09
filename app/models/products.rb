@@ -3,7 +3,7 @@ class Products < ApplicationRecord
   
   def self.search(term)
     if term
-      where('name LIKE ?',"%#{term}%")
+      where('lower(name) LIKE ?',"%#{term.downcase}%")
     else
       all
     end
