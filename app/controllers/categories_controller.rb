@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :set_categories, only: [:show, :edit, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :redirect_if_categories_not_found
 
   # GET /categories
   # GET /categories.json

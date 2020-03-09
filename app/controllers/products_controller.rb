@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_products, only: [:show, :edit, :update, :destroy]
-
+  rescue_from ActiveRecord::RecordNotFound, with: :redirect_if_products_not_found
   # GET /products
   # GET /products.json
   def index
@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @categories = Categories.all
   end
 
   # POST /products
