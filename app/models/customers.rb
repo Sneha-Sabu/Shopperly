@@ -8,5 +8,5 @@ class Customers < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6}
   validates :address, presence: true
-  validates :countries_id, presence:true
+  validates :countries_id, presence: true
 end

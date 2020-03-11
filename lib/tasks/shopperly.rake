@@ -50,7 +50,9 @@ end
       if !Countries.exists?(name: row[0])
         #create new model instances with the data
         Countries.create!(
-        name: row[0]
+        name: row[0],
+        latitude: row[1],
+        longitude: row[2]
         )
       end
     end
