@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :customers
+  resources :user
+  resources :countries
   resources :products
   resources :categories
   get 'shopperly/index'

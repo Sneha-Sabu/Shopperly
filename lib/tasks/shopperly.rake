@@ -40,4 +40,20 @@ end
    end
 end
 
+ task seed_countries: :environment do
+    #drop the old table data before importing the new stuff
+    Countries.destroy_all
+
+    CSV.foreach("lib/assets/Countries.csv", :headers =>true) do |row |
+      # puts row.inspect #just so that we know the file's being read
+
+      if !Countries.exists?(name: row[0])
+        #create new model instances with the data
+        Countries.create!(
+        name: row[0]
+        )
+      end
+    end
+end
+
 end

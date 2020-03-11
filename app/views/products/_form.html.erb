@@ -38,7 +38,7 @@
 
   <div class="field">
     <%= form.label :categories_id %>
-    <%= form.collection_select(:categories_id, @categories, :id, :name ) %>
+    <%= form.collection_select(:categories_id, Categories.all, :id, :name ) %>
 
 
 

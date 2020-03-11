@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customers.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customers.email %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @customers.password_digest %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @customers.address %>
+</p>
+
+<p>
+  <strong>Countries:</strong>
+  <%= @customers.countries_id %>
+</p>
+
+<%= link_to 'Edit', edit_customers_path(@customers) %> |
+<%= link_to 'Back', customers_index_path %>
