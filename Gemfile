@@ -28,6 +28,7 @@ gem 'jquery-rails'
 gem 'rails_admin', '~> 2.0'
 gem 'will_paginate'
 gem 'cancancan'
+gem 'sendgrid-ruby'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
