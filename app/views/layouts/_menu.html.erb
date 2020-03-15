@@ -1,11 +1,71 @@
-<center><%= image_tag("logo.jpg",  {:style => "width:300px; height:auto; text-align:center;"}) %>
-<p> <%=link_to 'Home',shopperly_index_path %> |   <%=link_to 'Product Categories',categories_index_path %> | <%=link_to 'Products',products_index_path %> | 
-<% if current_users.nil? %>
-	<%= link_to new_users_session_path, class: 'login-button' do %>Register/ Login |<% end %>
-<% else %>
-    <%= link_to 'Edit Profile', edit_users_registration_path %>|
-	<%= link_to destroy_users_session_path, method: :delete do %>Log out |<% end %>
-<% end %> 
+<html lang="en">
+  <head>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-</p> 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <%= stylesheet_link_tag "application" %>
+  </head>
+<center>
+ <header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/categories">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products">Products</a>
+        </li>
+        <% if current_users.nil? %>
+        <li class="nav-item">
+	      <a class="nav-link" href="/users/sign_in">Login</a>
+	      </li>
+	      <li class="nav-item">
+	      <a class="nav-link" href="/users/sign_up">Signup</a>
+	      </li>
+        <% end %>
+        <% if users_signed_in? %>
+        <li class="nav-item">
+	      <a class="nav-link" href="/users/edit">Profile</a>
+	      </li>
+	      <li class="nav-item"><%= link_to destroy_users_session_path, class: "nav-link", method: :delete do  %>Logout<% end %>
+ 	      </li>
+        <% end %>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+</header>
+<body>
+<%= image_tag("logo.jpg",  {:style => "width:300px; height:auto; text-align:center; position: relative; top: 50px;"}) %>
+</body>
 </center>
+
+</html>

@@ -32,9 +32,24 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  
+  config.action_mailer.default_url_options = { host: 'shopperly.herokuapp.com', port: 3000 }
+
 
   config.action_mailer.perform_caching = false
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.smtp_settings = {
+  user_name:      Rails.application.secrets.mail_username,
+  password:       Rails.application.secrets.mail_password,
+  domain:         'gmail.com',
+  address:       'smtp.gmail.com',
+  port:          '587',
+  authentication: :plain,
+  enable_starttls_auto: true
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -54,7 +69,6 @@ Rails.application.configure do
   config.assets.quiet = true
   
   config.force_ssl = true
-  config.action_mailer.default_url_options = { host: '172.31.21.210', port: 3000 }
 
 
   # Raises error for missing translations.
