@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_140308) do
+ActiveRecord::Schema.define(version: 2020_03_14_204209) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -50,15 +50,23 @@ ActiveRecord::Schema.define(version: 2020_03_11_140308) do
     t.index ["categories_id"], name: "index_products_on_categories_id"
   end
 
-  create_table "user", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password_digest"
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "address"
+    t.integer "countries_id"
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_user_on_email", unique: true
+    t.string "name"
+    t.index ["countries_id"], name: "index_users_on_countries_id"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "customers", "countries"
   add_foreign_key "products", "categories"
+  add_foreign_key "users", "countries"
 end

@@ -54,7 +54,7 @@ Rails.application.configure do
   config.assets.quiet = true
   
   config.force_ssl = true
-
+  config.action_mailer.default_url_options = { host: '172.31.21.210', port: 3000 }
 
 
   # Raises error for missing translations.
