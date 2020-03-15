@@ -41,6 +41,23 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Products</a>
         </li>
+        <li><% if current_users.nil? %>
+	<%= link_to new_users_session_path, class: 'login-button' do %>Sign in<% end %>
+<% else %>
+ 	<%= link_to destroy_users_session_path, method: :delete do %>Log out<% end %>
+<% end %>
+
+<% if users_signed_in? %>
+
+  <%= link_to('Edit registration', edit_users_registration_path) %>
+  <%= link_to('Logout', destroy_users_session_path, :method => :delete) %>        
+
+<% else %>
+
+  <%= link_to('Register', new_users_registration_path)  %>
+  <%= link_to('Login', new_users_session_path)  %>  
+
+<% end %></li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">

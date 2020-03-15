@@ -26,7 +26,7 @@ gem 'devise'
 gem 'toastr-rails'
 gem 'jquery-rails'
 gem 'rails_admin', '~> 2.0'
-gem 'will_paginate'
+gem 'cancancan'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
