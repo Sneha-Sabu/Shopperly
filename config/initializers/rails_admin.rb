@@ -1,4 +1,5 @@
 RailsAdmin.config do |config|
+  config.parent_controller = 'ApplicationController'
   config.authorize_with :cancancan, AdminAbility
 
   ### Popular gems integration
@@ -39,4 +40,8 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+ config.authenticate_with do
+    warden.authenticate! scope: :users
+  end
+  config.current_user_method(&:current_users)
 end
