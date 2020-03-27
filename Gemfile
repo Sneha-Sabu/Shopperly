@@ -25,10 +25,12 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'toastr-rails'
 gem 'jquery-rails'
-gem 'rails_admin', '~> 2.0'
+gem 'rails_admin'
+gem 'rails_admin_charts'
 gem 'will_paginate'
 gem 'cancancan'
 gem 'sendgrid-ruby'
+gem "chartkick"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

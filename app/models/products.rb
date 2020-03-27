@@ -1,4 +1,5 @@
 class Products < ApplicationRecord
+  include RailsAdminCharts
   belongs_to :categories
   
   def self.search(term)

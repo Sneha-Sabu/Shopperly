@@ -1,0 +1,3 @@
+<%= column_chart Products.group(:name).count %>
+
+<%= bar_chart Products.group(:name).sum(:price) %>
