@@ -6,7 +6,7 @@
 <%= text_field_tag :term,  params[:term]  %>
 <%= submit_tag 'Search' %>
 <% end %>
-<table>
+<table class="products">>
   <thead>
     <tr>
       <th>Name</th>
@@ -20,16 +20,16 @@
 
   <tbody>
     <% @products.each do |products| %>
-      <tr>
-        <td><%= products.name %></td>
+      <tr class="<%= cycle("list_line_odd", "list_line_even") %>">
+        <td  class="list_description"><%= products.name %></td>
         
-        <td><%= image_tag products.image , :class => "style_image" %></td>
+        <td><%= image_tag products.image , :class => "list_image" %></td>
         <td><%= products.price %></td>
         <td><%= products.brand %></td>
         <td><%= products.categories.name %></td>
-        <td><%= link_to 'Show', products %></td>
-        <td><%= link_to 'Edit', edit_products_path(products) %></td>
-        <td><%= link_to 'Destroy', products, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="list_actions"><%= link_to 'Show', products %></td>
+        <td class="list_actions"><%= link_to 'Edit', edit_products_path(products) %></td>
+        <td class="list_actions"><%= link_to 'Destroy', products, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
