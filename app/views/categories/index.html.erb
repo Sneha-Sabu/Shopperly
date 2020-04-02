@@ -25,5 +25,6 @@
 </table>
 
 <br>
-
+<% if current_users.superadmin_role? || current_users.supervisor_role? %>
 <%= link_to 'New Categories', new_categories_path %>
+<% end %>

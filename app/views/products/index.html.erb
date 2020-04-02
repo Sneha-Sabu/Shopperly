@@ -39,5 +39,6 @@
 
 <br>
 <%= will_paginate @products %>
-
+<% if current_users.superadmin_role? || current_users.supervisor_role? %>
 <%= link_to 'New Products', new_products_path %>
+<% end %>
