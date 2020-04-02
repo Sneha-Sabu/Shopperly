@@ -1,3 +1,4 @@
 class Categories < ApplicationRecord
-    has_one :products
+validates :name, presence: true    
+    has_many :products
 end
