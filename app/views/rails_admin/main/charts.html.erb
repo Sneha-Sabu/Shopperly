@@ -1,3 +1,6 @@
-<%= column_chart Products.group(:brand).limit('10').count %>
-
-<%= bar_chart Products.group(:name).limit('10').sum(:price) %>
+<h1>Prices of Brands</h1>
+<%= pie_chart Products.group(:brand).limit('30').sum(:price) %>
+<h1>Prices of Products</h1>
+<%= bar_chart Products.group(:name).limit('30').sum(:price) %>
+<h1>Count of Products</h1>
+<%= column_chart Products.group(:name).count %>
