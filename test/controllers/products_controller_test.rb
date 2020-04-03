@@ -18,18 +18,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
-    get new_products_url
-    assert_response :success
-  end
 
-  test "should create products" do
-    assert_difference('Products.count') do
-    post products_url, params: { product: @update }
-    end
-
-    assert_redirected_to products_url(Products.last)
-  end
 
   test "should show products" do
     get products_url(@products)
@@ -41,16 +30,6 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update products" do
-    patch products_url(@product), params: { product: @update }
-    assert_redirected_to products_url(@products)
-  end
 
-  test "should destroy products" do
-    assert_difference('Products.count', -1) do
-      delete products_url(@products)
-    end
 
-    assert_redirected_to products_index_url
-  end
 end

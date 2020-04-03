@@ -1,17 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: Alisha Solid Women's Cycling Shorts
   description: MyString
-  image: MyString
+  image: http://img5a.flixcart.com/image/short/u/4/a/altht-3p-21-alisha-38-original-imaeh2d5vm5zbtgg.jpeg
   price: 1
   brand: MyString
   categories: one
 
-two:
-  name: MyString
-  description: MyString
-  image: MyString
-  price: 1
-  brand: MyString
-  categories: two

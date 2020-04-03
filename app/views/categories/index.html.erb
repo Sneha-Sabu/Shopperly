@@ -15,16 +15,8 @@
       <tr>
         <td><%= categories.name %></td>
         <td><%= link_to 'Show', categories %></td>
-        <% if current_users.superadmin_role? || current_users.supervisor_role? %>
-        <td><%= link_to 'Edit', edit_categories_path(categories) %></td>
-        <td><%= link_to 'Destroy', categories, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-<% if current_users.superadmin_role? || current_users.supervisor_role? %>
-<%= link_to 'New Categories', new_categories_path %>
-<% end %>

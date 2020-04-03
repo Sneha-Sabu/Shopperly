@@ -28,10 +28,6 @@
         <td><%= products.brand %></td>
         <td><%= products.categories.name %></td>
         <td class="list_actions"><%= link_to 'Show', products %></td>
-        <% if current_users.superadmin_role? || current_users.supervisor_role? %>
-        <td class="list_actions"><%= link_to 'Edit', edit_products_path(products) %></td>
-        <td class="list_actions"><%= link_to 'Destroy', products, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -39,6 +35,3 @@
 
 <br>
 <%= will_paginate @products %>
-<% if current_users.superadmin_role? || current_users.supervisor_role? %>
-<%= link_to 'New Products', new_products_path %>
-<% end %>
