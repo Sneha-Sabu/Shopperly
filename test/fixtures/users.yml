@@ -1,0 +1,4 @@
+users_001:
+          id: 1
+          email: test@sample.com
+          encrypted_password: '0e18f44c1fec03ec4083422cb58ba6a09ac4fb2a'

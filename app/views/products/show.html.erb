@@ -30,5 +30,7 @@
   <%= @products.categories.name %>
 </p>
 
+<%= button_to 'Add to cart', line_item_index_path(products_id: @products), class: 'button is-warning add-to-cart' %>
+
 <%= link_to 'Edit', edit_products_path(@products) %> |
 <%= link_to 'Back', products_index_path %>

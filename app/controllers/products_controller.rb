@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  skip_before_action :authenticate_users!, :only => [:index]
+  
   before_action :set_products, only: [:show, :edit, :update, :destroy]
   rescue_from ActiveRecord::RecordNotFound, with: :redirect_if_products_not_found
   # GET /products
@@ -16,8 +16,8 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    @products = Products.new
     @categories = Categories.all
+    @products = current_user.products.build
   end
 
   # GET /products/1/edit
@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @products = Products.new(products_params)
+    @products = current_user.products.build(products_params)
 
     respond_to do |format|
       if @products.save
