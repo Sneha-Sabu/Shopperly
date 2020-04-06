@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <% if flash[:notice] %>
+    <div class="notice col-12"><%= flash[:notice] %></div>
+  <% end %>  
+    
     <%= render :partial=>"layouts/menu" %>
     <%= yield %>
     <% unless flash.empty? %>
@@ -21,7 +25,8 @@
       <% end %>
     </script>
     <% end %>
-    
+  
+   
   
   
   <!-- ======= Footer ======= -->
