@@ -32,6 +32,7 @@ gem 'cancancan'
 gem 'sendgrid-ruby'
 gem "chartkick"
 
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

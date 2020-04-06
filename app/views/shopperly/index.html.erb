@@ -1,199 +1,164 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <%= stylesheet_link_tag "application" %>
-  </head>
-  <body>
-   
-<main role="main">
+<head>
+<body>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag("slider1.jpg") %>
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-<<<<<<< HEAD
-        <div class="container">
-          <div class="carousel-caption text-left">
-          
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(/assets/slider5.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Welcome to <span>Shopperly</span></h2>
+                <p class="animated fadeInUp">Fulfilling your shopping needs</p>
+                <a href="/products" class="btn-get-started animated fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(/assets/slider2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Accessories</span></h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(/assets/slider3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Electronics</h2>
+              </div>
+            </div>
           </div>
         </div>
-=======
-        
->>>>>>> 4fdb9b783a3fdbfb1b04e61e349d9be3c3751a72
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
       </div>
-      <div class="carousel-item">
-        <%= image_tag("slider2.jpg") %>
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-<<<<<<< HEAD
-        <div class="container">
-          <div class="carousel-caption">
-           
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="icon-box">
+              <img src= "http://img6a.flixcart.com/image/waistcoat/d/z/y/tl-012-pick-pocket-xxl-original-imaefurn2xrqf4ef.jpeg"  height="250" />
+              <h3><a href="">Clothing</a></h3>
+              <p>Discover the latest fashion and trends in Menswear and Womenswear. Shop the latest clothes at Shopperly and keep your style game strong with the freshest trends.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img src= "http://img6a.flixcart.com/image/sofa-bed/j/6/q/fhd115-double-foam-fabhomedecor-dark-brown-dark-brown-original-imaeh3gee5zcazvm.jpeg" width= "300" height="250"/>
+              <h3><a href="">Home Decor</h3>
+              <p>Home accessories are a great way to express yourself and a simple way of changing the look of your room in a fast and affordable way. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img src= "http://img6a.flixcart.com/image/ring/n/g/w/kir0179-15-kiara-jewellery-ring-original-imadtdybfjmgtssq.jpeg" width="300" height="250"/>
+              <h3><a href="">Jewellery</a></h3>
+              <p>Whether you're looking for earrings, bracelets, necklaces or rings, the options are endless. You'll find a huge range of jewellery brands to choose from at Shopperly.</p>
+            </div>
           </div>
         </div>
-=======
 
->>>>>>> 4fdb9b783a3fdbfb1b04e61e349d9be3c3751a72
       </div>
-      <div class="carousel-item">
-        <%= image_tag("slider3.jpg") %>
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-<<<<<<< HEAD
-        <div class="container">
-          <div class="carousel-caption text-right">
+    </section><!-- End Featured Section -->
+ <hr class="featurette-divider"> 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about" style= "background: #e96b56; padding: 20px; color: #ffffff;">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="/assets/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>About</h3>
+            <p>
+              Shopperly is your one stop solution to all your shopping needs. <br/> <span style= "color: #ffffff;">Find it, Love it, Buy it!</span>
+            </p>
             
           </div>
         </div>
-=======
+
+      </div>
+    </section><!-- End About Section -->
+ <hr class="featurette-divider"> 
+    <!-- ======= Products Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Products</h2>
+        </div>
        
->>>>>>> 4fdb9b783a3fdbfb1b04e61e349d9be3c3751a72
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Clothing</h2>
-        <p class="lead">Discover the latest fashion and trends in Menswear and Womenswear. Shop the latest clothes at Shopperly and keep your style game strong with the freshest trends. </p>
-      </div>
-      <div class="col-md-5">
-        <img src= "http://img6a.flixcart.com/image/waistcoat/d/z/y/tl-012-pick-pocket-xxl-original-imaefurn2xrqf4ef.jpeg"  width="300" height="400" />
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Home Decor</h2>
-        <p class="lead">Home accessories are a great way to express yourself and a simple way of changing the look of your room in a fast and affordable way. Prepare to fall in love with our remarkable collection of home accessories. </p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src= "http://img6a.flixcart.com/image/sofa-bed/j/6/q/fhd115-double-foam-fabhomedecor-dark-brown-dark-brown-original-imaeh3gee5zcazvm.jpeg"  width="400" height="400"/>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Jewellery</h2>
-        <p class="lead">Whether you're looking for earrings, bracelets, necklaces or rings, the options are endless. You'll find a huge range of designer and fine jewellery brands to choose from at Shopperly.</p>
-      </div>
-      <div class="col-md-5">
-        <img src= "http://img6a.flixcart.com/image/ring/n/g/w/kir0179-15-kiara-jewellery-ring-original-imadtdybfjmgtssq.jpeg" width="400" height="300"/>
-      </div>
-    </div>
-
-  
-  <% cache @products do %>
-    <% @products.each do |product| -%>
-     <% cache product do %>
-          <div class="<%= cycle('left', 'right') -%>">
-        <hr class="featurette-divider">    
-        <div class="row featurette">
-              <div class="col-md-7">
-               <h2 class="featurette-heading">
-        <%= product.name %></h2>
-        <p class="lead"><%= sanitize(product.brand) %> </p> 
-        <%= link_to 'View more details', product %>
-        <div class="price_line">
-        <span class="price"><%= number_to_currency(product.price) %></span>
-        
-        </div>
-        </div>
-        <div class="col-md-5"><%= image_tag product.image , :class => "style_image" %>
-        </div>
-        </div>
-        <br/>
-          <%= cycle('', :name=>"cleardiv") %>
-      <% end %>
+        <% cache @products do %>
+        <% @products.each do |product| -%>
+          <div class="row"> 
+       <% cache product do %>
+            <div class="icon-box  col-lg-12 col-md-12">
+              <h4>  <%= product.name %></h4>
+              <%= image_tag product.image , :class => "style_image" %>
+              <p><%= sanitize(product.brand) %> </p>
+              <p><span class="price"><%= number_to_currency(product.price) %></span></p>
+              <%= link_to 'View more details', product %> 
+            </div>
+         </div>
+       <% end %>
     <% end %>
+    </div>
   <% end %>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
- 
   
+    </section><!-- End Services Section -->
 
-  </div><!-- /.container -->
 
+  </main><!-- End #main -->
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2020 Shopperly, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
-</main>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+ 
+
+  <a href="#" class="back-to-top"></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/Shopperly/Shopperly/app/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/main.js" type="text/javascript"></script>
+
+</body>
+
 </html>

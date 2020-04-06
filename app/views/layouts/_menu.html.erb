@@ -1,73 +1,64 @@
 <html lang="en">
-  <head>
-    
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <%= stylesheet_link_tag "application" %>
-  </head>
-<center>
- <header>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/categories">Categories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/products">Products</a>
-        </li>
-        <% if current_users.nil? %>
-        <li class="nav-item">
-	      <a class="nav-link" href="/users/sign_in">Login</a>
-	      </li>
-	      <li class="nav-item">
-	      <a class="nav-link" href="/users/sign_up">Signup</a>
-	      </li>
-        <% end %>
-        <% if users_signed_in? %>
-        <li class="nav-item">
-	      <a class="nav-link" href="/users/edit">Profile</a>
-	      </li>
-	      <li class="nav-item"><%= link_to destroy_users_session_path, class: "nav-link", method: :delete do  %>Logout<% end %>
- 	      </li>
-        <% end %>
-      </ul>
-     
-    </div>
-  </nav>
-       <%= image_tag("logo.jpg",  {:style => "width: 250px; height:auto;  "}) %>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  
-</header>
+  <title>Eterna Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/bootstrap.min.css" rel="stylesheet" type="text/css" >
+  <link href="/assets/icofont.min.css" rel="stylesheet" type="text/css">
+  <link href="/assets/boxicons.min.css" rel="stylesheet" type="text/css">
+  <link href="/assets/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="/assets/venobox.css" rel="stylesheet" type="text/css">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
 <body>
-     
-    
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="/"><%= image_tag("logo.jpg",  {:style => " "}) %></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/categories">Categories</a></li>
+          <li><a href="/products">Products</a></li>
+           <% if current_users.nil? %>
+          <li><a href="/users/sign_in">Login</a></li>
+	        <li><a href="/users/sign_up">Signup</a></li>
+          <% end %>
+          <% if users_signed_in? %>
+          <li><a href="/users/edit">Profile</a></li>
+	        <li><%= link_to destroy_users_session_path, method: :delete do  %>Logout<% end %></li>
+          <% end %>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
 
 
-</body>
-</center>
-
-</html>

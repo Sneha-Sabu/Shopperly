@@ -21,6 +21,9 @@ body {
   color: #5a5a5a;
 }
 
+.toast-message {
+    color: black !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

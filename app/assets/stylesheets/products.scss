@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .style_image {
   width: auto;
-  height: 300px;
+  height: 200px;
 }
 
 // Place all the styles related to the Products controller here.
@@ -15,7 +15,14 @@ table {
 border-collapse: collapse;
  }
  
+.toast-message {
+    color: black !important;
+}
  
+#toast-container * {
+    box-sizing: border-box;
+    background: orange !important;
+}
 
  table tr td {
  padding: 5px;
