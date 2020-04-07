@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+    include CurrentCart
+    before_action :set_cart
     protect_from_forgery with: :exception
     before_action :authenticate_users!
     before_action :configure_permitted_parameters, if: :devise_controller?
@@ -16,6 +18,10 @@ class ApplicationController < ActionController::Base
     def after_sign_in_path_for(resource)
     shopperly_index_path
     end
+    
+   def show
+   
+   end
     
     def redirect_if_categories_not_found
     logger.error "Attempt to access non-existent #{request.controller_class}#{params[:id]}"
