@@ -4,6 +4,10 @@ class OrderController < ApplicationController
   before_action :ensure_cart_isnt_empty, only: :new
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69c19b6b0a88b6effe23375305380a03f5994cab
   # GET /order
   # GET /order.json
   def index
@@ -18,13 +22,19 @@ class OrderController < ApplicationController
   # GET /order/new
   def new
     @order = Order.new
+<<<<<<< HEAD
     @countries = Countries.all
+=======
+>>>>>>> 69c19b6b0a88b6effe23375305380a03f5994cab
   end
 
   # GET /order/1/edit
   def edit
+<<<<<<< HEAD
     @order = Order.new
     @countries = Countries.all
+=======
+>>>>>>> 69c19b6b0a88b6effe23375305380a03f5994cab
   end
 
   # POST /order
@@ -75,7 +85,11 @@ class OrderController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_params
+<<<<<<< HEAD
       params.require(:order).permit(:name, :address, :email, :pay_type, :countries_id)
+=======
+      params.require(:order).permit(:name, :address, :email, :pay_type)
+>>>>>>> 69c19b6b0a88b6effe23375305380a03f5994cab
     end
     
     def ensure_cart_isnt_empty

@@ -17,6 +17,11 @@
      <%= f.label :address %><br />
      <%= f.text_field :address, autofocus: true, autocomplete: "address" %>
   </div>
+  
+   <div class="field">
+     <%= f.label :countries_id %><br />
+     <%= f.collection_select(:countries_id, Countries.all, :id, :name ) %>
+  </div>
 
   <div class="field">
     <%= f.label :password %>

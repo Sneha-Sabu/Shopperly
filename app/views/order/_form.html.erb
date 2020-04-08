@@ -19,10 +19,14 @@
   <div class="field">
     <%= form.label :address %>
     <%= form.text_area :address, rows: 3, cols: 40 %>
+<<<<<<< HEAD
 
   </div>
   
 
+=======
+  </div>
+>>>>>>> 69c19b6b0a88b6effe23375305380a03f5994cab
 
   <div class="field">
     <%= form.label :email %>
@@ -33,6 +37,7 @@
     <%= form.label :pay_type %>
     <%= form.select :pay_type, Order.pay_type.keys, prompt: 'Select a payment method' %>
   </div>
+<<<<<<< HEAD
   
     <div class="field">
   <%= form.label :countries_id %>
@@ -40,6 +45,11 @@
   </div>
 
   <div class="actions">
+=======
+
+  <div class="actions">
+    <%= form.submit %>
+>>>>>>> 69c19b6b0a88b6effe23375305380a03f5994cab
     <%= form.submit 'Place Order' %>
   </div>
 <% end %>
