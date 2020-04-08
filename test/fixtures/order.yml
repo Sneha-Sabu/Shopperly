@@ -5,10 +5,15 @@
 # below each fixture, per the syntax in the comments below
 #
 one:
-  products: two
-  cart: one
+    name: Dave Thomas
+    address: MyText
+    countries_id: 1
+    email: dave@example.org
+    pay_type: 2
 
 two:
-  products: ruby
-  cart: one
-
+    name: MyString
+    address: MyText
+    countries_id: 2
+    email: MyString
+    pay_type: 1

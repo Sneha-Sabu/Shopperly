@@ -1,3 +1,3 @@
 class Countries < ApplicationRecord
-    has_many  :customers
+    has_many  :order
 end

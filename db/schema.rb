@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_03_224553) do
+ActiveRecord::Schema.define(version: 2020_04_08_172408) do
 
   create_table "cart", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -49,8 +49,23 @@ ActiveRecord::Schema.define(version: 2020_04_03_224553) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "quantity", default: 1
+    t.integer "order_id"
+    t.integer "countries_id"
     t.index ["cart_id"], name: "index_line_item_on_cart_id"
+    t.index ["countries_id"], name: "index_line_item_on_countries_id"
+    t.index ["order_id"], name: "index_line_item_on_order_id"
     t.index ["products_id"], name: "index_line_item_on_products_id"
+  end
+
+  create_table "order", force: :cascade do |t|
+    t.string "name"
+    t.text "address"
+    t.string "email"
+    t.integer "pay_type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "countries_id"
+    t.index ["countries_id"], name: "index_order_on_countries_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -86,7 +101,10 @@ ActiveRecord::Schema.define(version: 2020_04_03_224553) do
 
   add_foreign_key "customers", "countries"
   add_foreign_key "line_item", "cart"
+  add_foreign_key "line_item", "countries"
+  add_foreign_key "line_item", "order"
   add_foreign_key "line_item", "products"
+  add_foreign_key "order", "countries"
   add_foreign_key "products", "categories"
   add_foreign_key "users", "countries"
 end

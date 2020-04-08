@@ -1,0 +1,46 @@
+<script src='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css' rel='stylesheet' />
+ 
+<center>
+<p>Refresh the page if at first the map doesn't appear below.</p>
+
+<div id='map' style='width: 720px; height: 400px; '></div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1Ijoic25lc2hlYiIsImEiOiJjazZ0eWI2bWgwM3djM3RtczB6Zm1hajA1In0.3puNkWvosmAZdTYx2-ACcQ';
+var map = L.mapbox.map('map')
+    .setView([<%= @order.countries.latitude %>, <%= @order.countries.longitude %>], 5)
+    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+    var marker = L.marker([<%= @order.countries.latitude %>, <%= @order.countries.longitude %>]).addTo(map);   
+    
+</script>
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @order.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @order.address %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @order.countries.name %>
+</p>
+
+
+
+<p>
+  <strong>Email:</strong>
+  <%= @order.email %>
+</p>
+
+<p>
+  <strong>Pay type:</strong>
+  <%= @order.pay_type %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', order_index_path %>
