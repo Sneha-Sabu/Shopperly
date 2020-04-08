@@ -1,18 +1,18 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
-   before_action :configure_permitted_parameters, only: [:create, :new]
+  # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
-  def index
-    @countries = Countries.all
-  end
+  # def new
+  #   super
+  # end
 
-  #POST /resource
-  def new
-    @countries = Countries.all
-  end
+  # POST /resource
+  # def create
+  #   super
+  # end
 
   # GET /resource/edit
   # def edit
