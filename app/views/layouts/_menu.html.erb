@@ -50,7 +50,7 @@
           <% end %>
           <% if users_signed_in? %>
           <li><a href="/users/edit">Profile</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/admin">Dashboard</a></li>
 	        <li><%= link_to destroy_users_session_path, method: :delete do  %>Logout<% end %></li>
           <% end %>
          
