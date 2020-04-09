@@ -25,8 +25,6 @@
             = pie_chart Order.group_by_day(:created_at).count
             %h1 Orders received week-wise
             = column_chart Order.group_by_day_of_week(:created_at, format: "%a").count
-            %h1 User registrations day wise
-            = line_chart Users.group(:users_id).group_by_day(:created_at).count
             %h1 Prices of Brands
             = pie_chart Products.group(:brand).limit('20').sum(:price)
             %h1 Prices of Products
