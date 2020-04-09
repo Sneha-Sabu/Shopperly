@@ -10,9 +10,6 @@ enum pay_type: {
 "Purchase order" => 2
 }
 
-def index
-   @order = Order.all
-end
 def add_line_item_from_cart(cart)
    cart.line_item.each do |item|
    item.cart_id = nil
