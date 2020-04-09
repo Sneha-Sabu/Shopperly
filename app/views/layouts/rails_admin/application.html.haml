@@ -17,18 +17,25 @@
         .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2
           .content{:'data-pjax-container' => true}
             = render template: 'layouts/rails_admin/pjax'
-        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2
-          .content
+            = scatter_chart Order.pluck(:id, :countries_id), xtitle: "Number of Orders", ytitle: "Country id"
+            %br/
+            %hr/
             %h1 Orders received minute-wise
-            = line_chart Order.group_by_minute(:created_at).count
+            = line_chart Order.group_by_minute(:created_at).count, xtitle: "Time", ytitle: "Number of Orders"
+            %br/
+            %hr/
             %h1 Orders received day-wise
             = pie_chart Order.group_by_day(:created_at).count
+            %br/
+            %hr/
             %h1 Orders received week-wise
-            = column_chart Order.group_by_day_of_week(:created_at, format: "%a").count
-            %h1 Prices of Brands
-            = pie_chart Products.group(:brand).limit('20').sum(:price)
-            %h1 Prices of Products
-            = bar_chart Products.group(:name).limit('20').sum(:price)
-            %h1 Count of Products
-            = column_chart Products.group(:name).count
- 
+            = column_chart Order.group_by_day_of_week(:created_at, format: "%a").count, xtitle: "Day of the week", ytitle: "Number of Orders"
+            %br/
+            %hr/
+            %h1 User Registrations day-wise
+            = line_chart Users.group_by_day(:created_at).count
+            %br/
+            %hr/
+            %h1 User Registrations week-wise
+            = area_chart Users.group_by_day(:created_at).count
+            

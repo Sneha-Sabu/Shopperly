@@ -1,0 +1,80 @@
+f2386de	Sneha Sabu	Thu Apr 9 02:37:22 2020	Restricting access of Orders page and Dashboard analytics page
+75e3c2f	Sneha Sabu	Thu Apr 9 02:33:31 2020	Restricting access of Orders page and Dashboard analytics page
+9bd0c92	Sneha Sabu	Wed Apr 8 23:42:23 2020	Deleting the cart after placing an order and resetting it
+5cc46a8	Sneha Sabu	Wed Apr 8 23:31:02 2020	Deleting the cart after placing an order and resetting it
+d1aed46	Sneha Sabu	Wed Apr 8 22:25:54 2020	Order checkout and map implementation
+f690f92	Sneha Sabu	Wed Apr 8 21:45:46 2020	Order checkout and map implementation
+84163bc	Sneha Sabu	Wed Apr 8 21:42:49 2020	Order checkout and map implementation
+dbb41f1	Sneha Sabu	Wed Apr 8 20:50:46 2020	Order checkout and map implementation
+9a24549	Sneha Sabu	Wed Apr 8 20:47:54 2020	Order checkout and map implementation
+69c19b6	Sneha Sabu	Wed Apr 8 02:09:37 2020	Errors
+98bcc9e	Sneha Sabu	Wed Apr 8 01:31:31 2020	Updates - Order page form
+acb1e1f	Sneha Sabu	Wed Apr 8 01:22:37 2020	Updates
+62b6645	Sneha Sabu	Tue Apr 7 21:54:54 2020	Checkout and placing order
+0a72f0e	Sneha Sabu	Tue Apr 7 01:31:42 2020	Tests for the cart controller
+4965a61	Sneha Sabu	Mon Apr 6 23:39:14 2020	Notice messages on heroku
+c234ec0	Sneha Sabu	Mon Apr 6 22:48:01 2020	Line controllers test
+1c48a90	Ubuntu	Mon Apr 6 21:13:53 2020	test
+e3a2b84	Sneha Sabu	Mon Apr 6 17:50:50 2020	Tests for LineItem
+d48a6ba	Sneha Sabu	Mon Apr 6 16:15:41 2020	Serve static assets
+46f10e6	Sneha Sabu	Mon Apr 6 16:10:04 2020	Serve static assets
+8ab45c7	Sneha Sabu	Mon Apr 6 15:59:25 2020	Serve static assets
+0de9a69	Sneha Sabu	Mon Apr 6 15:37:52 2020	Serve static assets
+d67b175	Sneha Sabu	Mon Apr 6 15:24:31 2020	Serve static assets
+cee9251	Sneha Sabu	Mon Apr 6 15:21:42 2020	Serve static assets
+b9c4cf1	Sneha Sabu	Mon Apr 6 15:17:31 2020	Serve static assets
+6cae7c9	Sneha Sabu	Mon Apr 6 15:11:24 2020	Serve static assets
+dd731ec	Sneha Sabu	Mon Apr 6 15:07:43 2020	Serve static assets
+fbe7f38	Sneha Sabu	Mon Apr 6 14:59:43 2020	Serve static assets
+b98b6b5	Sneha Sabu	Mon Apr 6 14:27:20 2020	Serve static assets
+899b9e6	Sneha Sabu	Mon Apr 6 14:06:20 2020	Serve static assets
+5518ce5	Sneha Sabu	Mon Apr 6 13:13:10 2020	Serve static assets
+31b4018	Sneha Sabu	Mon Apr 6 13:08:41 2020	Serve static assets
+1451ec8	Sneha Sabu	Mon Apr 6 01:44:30 2020	Homepage Layout final edits
+8471ee0	Sneha Sabu	Mon Apr 6 01:34:14 2020	Homepage Layout final edits
+9dbdda0	Sneha Sabu	Sun Apr 5 16:11:52 2020	Homepage CSS edits
+1578ebc	Sneha Sabu	Sun Apr 5 14:46:23 2020	Homepage CSS edits
+4fdb9b7	Sneha Sabu	Sat Apr 4 22:06:11 2020	Homepage css layout edits
+07c3828	Sneha Sabu	Sat Apr 4 21:26:25 2020	Cart - Remove item functionality
+5c427cc	Sneha Sabu	Sat Apr 4 00:06:05 2020	Cart addition and tests
+9ffacf9	Sneha Sabu	Fri Apr 3 17:23:56 2020	Charts updated for Products page on the Admin panelrails
+896d600	Sneha Sabu	Fri Apr 3 17:06:38 2020	Charts updated for Products page on the Admin panel
+962b2a5	Sneha Sabu	Fri Apr 3 16:45:18 2020	Charts updated for Products page on the Admin panel
+d58cb7e	Sneha Sabu	Fri Apr 3 15:32:59 2020	Caching
+b9d6fdb	Sneha Sabu	Fri Apr 3 15:22:11 2020	Tests for controllers and models
+0a6d9a2	Sneha Sabu	Fri Apr 3 00:12:11 2020	Homepage Dynamic products listing
+1228789	Sneha Sabu	Thu Apr 2 20:35:33 2020	Test for Categories model
+8c5f16b	Sneha Sabu	Thu Apr 2 20:30:38 2020	Tests for models and controllers
+cf9b9f3	Sneha Sabu	Thu Apr 2 14:41:13 2020	Updating the javascript tag
+71bb840	Sneha Sabu	Thu Apr 2 14:38:15 2020	Updating the javascript tag
+2866f31	Sneha Sabu	Thu Apr 2 14:32:05 2020	Updating the javascript tag
+2346674	Sneha Sabu	Thu Apr 2 14:07:56 2020	Restricting add new products or categories actions for regular users
+94a1e96	Sneha Sabu	Thu Apr 2 14:02:50 2020	Validation on the Products and Categories page for the Admin user
+2be35e2	Sneha Sabu	Wed Apr 1 22:38:46 2020	Restricting edit and delete actions for regular users
+7bb9dd7	Sneha Sabu	Wed Apr 1 21:47:37 2020	Products page layout edits
+cb431fc	Sneha Sabu	Wed Apr 1 21:44:43 2020	Products page layout edits
+c8317ad	Sneha Sabu	Fri Mar 27 00:35:29 2020	Charts for Admin dashboard - Products page
+27228db	Sneha Sabu	Mon Mar 16 17:17:01 2020	Emailing
+334cbc2	Sneha Sabu	Mon Mar 16 17:02:56 2020	Emailing
+e6d3b44	Sneha Sabu	Mon Mar 16 16:51:03 2020	Emailing
+f2a1ae6	Sneha Sabu	Mon Mar 16 16:27:09 2020	Emailing
+a12723d	Sneha Sabu	Sun Mar 15 21:08:23 2020	Email configuration - Forgot password
+b1a3b9e	Sneha Sabu	Sun Mar 15 20:42:45 2020	Email configuration - Forgot password
+2342e46	Sneha Sabu	Sun Mar 15 20:36:24 2020	Email configuration - Forgot password
+1ace8b8	Sneha Sabu	Sun Mar 15 17:50:10 2020	Will paginate gem
+6b8f42c	Sneha Sabu	Sun Mar 15 17:46:29 2020	Role based access for superadmins
+234583d	Sneha Sabu	Sun Mar 15 17:19:48 2020	Rails admin - Role based Admin access
+270224c	Sneha Sabu	Sun Mar 15 14:37:03 2020	Pagination for the Products page
+26ea561	Sneha Sabu	Sun Mar 15 14:09:59 2020	Users accounts using the Devise gem
+73cfe6b	Sneha Sabu	Wed Mar 11 14:09:27 2020	Update in the seeding of countries - latitude and longitude
+3168050	Sneha Sabu	Wed Mar 11 13:41:48 2020	Countries scaffold generated and added to the menu
+fd83a80	Sneha Sabu	Wed Mar 11 13:32:24 2020	Customers scaffold generated with signup form and validations
+d943afe	Sneha Sabu	Mon Mar 9 21:44:42 2020	Redirection - Exceptions
+39031da	Sneha Sabu	Mon Mar 9 21:05:58 2020	CSS update
+4a1265e	Sneha Sabu	Mon Mar 9 20:55:38 2020	CSS update
+d363924	Sneha Sabu	Mon Mar 9 20:35:02 2020	Bootstrap layout additions for homepage
+a233df0	Sneha Sabu	Mon Mar 9 13:58:20 2020	Case sensitivity on search - update
+29a65d4	Sneha Sabu	Mon Mar 9 13:33:09 2020	Ordering the products by id
+010046c	Sneha Sabu	Mon Mar 9 11:06:29 2020	add pg gem
+3ad2eb9	Sneha Sabu	Mon Mar 9 10:58:59 2020	Gemfile update
+d9671db	Sneha Sabu	Mon Mar 9 10:31:29 2020	First commit

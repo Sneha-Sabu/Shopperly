@@ -1,4 +1,5 @@
 class Products < ApplicationRecord
+has_many :line_item  
 before_destroy :not_referenced_by_any_line_item
 validates :name, :description, :image, :price, :brand, :categories_id, presence: true
 validates :price, numericality: {greater_than_or_equal_to: 0.01}

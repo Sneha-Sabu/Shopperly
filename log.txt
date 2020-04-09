@@ -1,0 +1,481 @@
+commit f2386de2b36ab69c4e9fa00f1901e7e47ac336b9
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 9 02:37:22 2020 +0000
+
+    Restricting access of Orders page and Dashboard analytics page
+
+commit 75e3c2fbb7ef7432f1ee43ee71d42e63e6586dba
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 9 02:33:31 2020 +0000
+
+    Restricting access of Orders page and Dashboard analytics page
+
+commit 9bd0c926d669344cb08d4b4d509af1534bfb5279
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 23:42:23 2020 +0000
+
+    Deleting the cart after placing an order and resetting it
+
+commit 5cc46a83f6646291fefb14cab1c3ec750c8cf580
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 23:31:02 2020 +0000
+
+    Deleting the cart after placing an order and resetting it
+
+commit d1aed46040a2c95e1df6850511420ce5752f8ffa
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 22:25:54 2020 +0000
+
+    Order checkout and map implementation
+
+commit f690f924fcbe004da9f12a3351a87e4a13b4ec78
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 21:45:46 2020 +0000
+
+    Order checkout and map implementation
+
+commit 84163bc11bc0840029a42e45dbe8b6cb4a84f71d
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 21:42:49 2020 +0000
+
+    Order checkout and map implementation
+
+commit dbb41f150931932e6fbf614041c2a12cc51a85c6
+Merge: 9a24549 69c19b6
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 20:50:46 2020 +0000
+
+    Order checkout and map implementation
+
+commit 9a24549af53792a1a62bb54cdc5e9ad3fde52e3e
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 20:47:54 2020 +0000
+
+    Order checkout and map implementation
+
+commit 69c19b6b0a88b6effe23375305380a03f5994cab
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 02:09:37 2020 +0000
+
+    Errors
+
+commit 98bcc9e5f83d760ae0dbb16d32bc10e898789419
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 01:31:31 2020 +0000
+
+    Updates - Order page form
+
+commit acb1e1fa33ce9934e72bebc31c71e220117b4583
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 8 01:22:37 2020 +0000
+
+    Updates
+
+commit 62b6645d20a5a3050fdc9841d05ad0efec5e58ef
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Tue Apr 7 21:54:54 2020 +0000
+
+    Checkout and placing order
+
+commit 0a72f0e7a1e728f16b236f63fac22f74bf2c9ff3
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Tue Apr 7 01:31:42 2020 +0000
+
+    Tests for the cart controller
+
+commit 4965a6192be583b45947360961377dc9fccfe383
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 23:39:14 2020 +0000
+
+    Notice messages on heroku
+
+commit c234ec0ae4768b3467edf9aa02c00809632260da
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 22:48:01 2020 +0000
+
+    Line controllers test
+
+commit 1c48a908c5f35abe55c5d478b3d3da8856165a5b
+Author: Ubuntu <ubuntu@ip-172-31-31-227.eu-west-2.compute.internal>
+Date:   Mon Apr 6 21:13:53 2020 +0000
+
+    test
+
+commit e3a2b8412d442133da07f1ba93cedda21f7dc318
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 17:50:50 2020 +0000
+
+    Tests for LineItem
+
+commit d48a6ba8682db4b909414a8b56c64a876210ccf1
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 16:15:41 2020 +0000
+
+    Serve static assets
+
+commit 46f10e6f5083b4214c224dc6415fc56dcd5b7bb8
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 16:10:04 2020 +0000
+
+    Serve static assets
+
+commit 8ab45c7a869e925269b792d6f3c546d49271b0f9
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 15:59:25 2020 +0000
+
+    Serve static assets
+
+commit 0de9a69937f95c9568a62b0776cd3a33aa6af1a6
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 15:37:52 2020 +0000
+
+    Serve static assets
+
+commit d67b17504dc4c0a487a4104077a49b44ec522dda
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 15:24:31 2020 +0000
+
+    Serve static assets
+
+commit cee925166f406ca5d66919a13ba54cf53687d2c3
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 15:21:42 2020 +0000
+
+    Serve static assets
+
+commit b9c4cf18e5675f9d04bd169b91d5ebdbcec7a900
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 15:17:31 2020 +0000
+
+    Serve static assets
+
+commit 6cae7c9bda98f4d1f0dd0a2dc0377f0fe8eb8fd2
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 15:11:24 2020 +0000
+
+    Serve static assets
+
+commit dd731ece7b40b01213298f26d746a2d361f6ee55
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 15:07:43 2020 +0000
+
+    Serve static assets
+
+commit fbe7f38555d4f7a217a8d12095472f09f166d975
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 14:59:43 2020 +0000
+
+    Serve static assets
+
+commit b98b6b5fa2d2dca42280e67d95c539b79c91abd2
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 14:27:20 2020 +0000
+
+    Serve static assets
+
+commit 899b9e6324ea19db159a1cb31a10398a7139c332
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 14:06:20 2020 +0000
+
+    Serve static assets
+
+commit 5518ce53f9526b67aa3fa619a83563c233e47172
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 13:13:10 2020 +0000
+
+    Serve static assets
+
+commit 31b40183f0aae95ad9c2b5dd763cf254591cf594
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 13:08:41 2020 +0000
+
+    Serve static assets
+
+commit 1451ec830dccd9852639ef5c34a5190f9f6227a5
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 01:44:30 2020 +0000
+
+    Homepage Layout final edits
+
+commit 8471ee0e605a462d6f130c02c38ce4a7ca0f9d05
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Apr 6 01:34:14 2020 +0000
+
+    Homepage Layout final edits
+
+commit 9dbdda0f1c9ff4d6ea383746577f76a1ea0388a1
+Merge: 1578ebc 4fdb9b7
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Apr 5 16:11:52 2020 +0000
+
+    Homepage CSS edits
+
+commit 1578ebc8de3863d1138bdb7f704bdb3673d42b10
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Apr 5 14:46:23 2020 +0000
+
+    Homepage CSS edits
+
+commit 4fdb9b783a3fdbfb1b04e61e349d9be3c3751a72
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sat Apr 4 22:06:11 2020 +0000
+
+    Homepage css layout edits
+
+commit 07c38289028f5d454eef5e9e286929c28937f9e0
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sat Apr 4 21:26:25 2020 +0000
+
+    Cart - Remove item functionality
+
+commit 5c427ccb6bc928abe605ecc7d607e49cac63bc17
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sat Apr 4 00:06:05 2020 +0000
+
+    Cart addition and tests
+
+commit 9ffacf9744a45475cdeff2023920a38c320806ac
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Fri Apr 3 17:23:56 2020 +0000
+
+    Charts updated for Products page on the Admin panelrails
+
+commit 896d60020456966d1da27c95febafc3fe20276d8
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Fri Apr 3 17:06:38 2020 +0000
+
+    Charts updated for Products page on the Admin panel
+
+commit 962b2a552303f3fb3b6859b5834cb1b4a4765925
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Fri Apr 3 16:45:18 2020 +0000
+
+    Charts updated for Products page on the Admin panel
+
+commit d58cb7e0be06e4a864d8ee43012a616c2d8f2bdb
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Fri Apr 3 15:32:59 2020 +0000
+
+    Caching
+
+commit b9d6fdb0adf6ebd52f7d8fdc2ea1ca628a8d3b43
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Fri Apr 3 15:22:11 2020 +0000
+
+    Tests for controllers and models
+
+commit 0a6d9a21d291a5a0f2aa01f5efc8a8f2aacb5652
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Fri Apr 3 00:12:11 2020 +0000
+
+    Homepage Dynamic products listing
+
+commit 1228789533929539a68d344cdb8e8b63e2b00ca7
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 2 20:35:33 2020 +0000
+
+    Test for Categories model
+
+commit 8c5f16b537307ffe940725ecabbc6734aec15c11
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 2 20:30:38 2020 +0000
+
+    Tests for models and controllers
+
+commit cf9b9f3851fc3cadd58859f2bc1927a5823de9c5
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 2 14:41:13 2020 +0000
+
+    Updating the javascript tag
+
+commit 71bb840adf4b5c126dcc3b9c8460b1fbb03b1133
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 2 14:38:15 2020 +0000
+
+    Updating the javascript tag
+
+commit 2866f3107914abe43492ab75b79ec151c8f227e1
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 2 14:32:05 2020 +0000
+
+    Updating the javascript tag
+
+commit 23466749eefd32790a6e9c2f3a4b41e22f092fba
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 2 14:07:56 2020 +0000
+
+    Restricting add new products or categories actions for regular users
+
+commit 94a1e962797539078bb0b7aced1129c2e6bbb770
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Thu Apr 2 14:02:50 2020 +0000
+
+    Validation on the Products and Categories page for the Admin user
+
+commit 2be35e221c7bba48e112221182a23deecf44f4c9
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 1 22:38:46 2020 +0000
+
+    Restricting edit and delete actions for regular users
+
+commit 7bb9dd7f12b25a7076e405b7dc3b403e6fb21f20
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 1 21:47:37 2020 +0000
+
+    Products page layout edits
+
+commit cb431fc447184eeceac1e0cf4354eb314d5a12cd
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Apr 1 21:44:43 2020 +0000
+
+    Products page layout edits
+
+commit c8317ad8e35a051517b42d5993b0d545dfd92a5a
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Fri Mar 27 00:35:29 2020 +0000
+
+    Charts for Admin dashboard - Products page
+
+commit 27228dbacbcc33fcbdf661ab7f5fc9d6abc2b98b
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 16 17:17:01 2020 +0000
+
+    Emailing
+
+commit 334cbc2ba7f96ec8ba85bc25db11dd9fcfb9a84a
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 16 17:02:56 2020 +0000
+
+    Emailing
+
+commit e6d3b4465951005cac1000cf7526a2f19d1b841e
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 16 16:51:03 2020 +0000
+
+    Emailing
+
+commit f2a1ae6839317be8fb851bdd3d2978b8cb240614
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 16 16:27:09 2020 +0000
+
+    Emailing
+
+commit a12723db672fbc345f71f897f4cfeefd7c9a527b
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 21:08:23 2020 +0000
+
+    Email configuration - Forgot password
+
+commit b1a3b9e8df3b828de12232d0cc3113ecf012d1b7
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 20:42:45 2020 +0000
+
+    Email configuration - Forgot password
+
+commit 2342e4669f3f9d3c7b51ecbf3bea61435ce0b8ea
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 20:36:24 2020 +0000
+
+    Email configuration - Forgot password
+
+commit 1ace8b8c3d615bc5ca45486cd31474e9d3752beb
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 17:50:10 2020 +0000
+
+    Will paginate gem
+
+commit 6b8f42cc406926c1cb13f53f289a5df208a3b81c
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 17:46:29 2020 +0000
+
+    Role based access for superadmins
+
+commit 234583d500b140e4d36ac96a0d0f086d37359271
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 17:19:48 2020 +0000
+
+    Rails admin - Role based Admin access
+
+commit 270224c4964ecdd8b190f00dcabf673ff0164478
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 14:37:03 2020 +0000
+
+    Pagination for the Products page
+
+commit 26ea5616e8cb3690972e5f99d70de57f22f690ad
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Sun Mar 15 14:09:59 2020 +0000
+
+    Users accounts using the Devise gem
+
+commit 73cfe6b8195647f2be7f9ce2d581d0ee41eed175
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Mar 11 14:09:27 2020 +0000
+
+    Update in the seeding of countries - latitude and longitude
+
+commit 316805029de70452c151a0e61bed24577454a984
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Mar 11 13:41:48 2020 +0000
+
+    Countries scaffold generated and added to the menu
+
+commit fd83a80ba5e4006c9b0ba42115a4a12443cfefd7
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Wed Mar 11 13:32:24 2020 +0000
+
+    Customers scaffold generated with signup form and validations
+
+commit d943afee3c51ac0d9e55bd009ef8240bd0b7c908
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 21:44:42 2020 +0000
+
+    Redirection - Exceptions
+
+commit 39031da69a51479c11cee33b075b47766729bbc2
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 21:05:58 2020 +0000
+
+    CSS update
+
+commit 4a1265ef6b9b940c99d9512beaf6dfbe40addf68
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 20:55:38 2020 +0000
+
+    CSS update
+
+commit d363924251b589bfc477f0daa42cb63d00b4c336
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 20:35:02 2020 +0000
+
+    Bootstrap layout additions for homepage
+
+commit a233df06184ea316ebd4bfccd7b86bcdefa92e29
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 13:58:20 2020 +0000
+
+    Case sensitivity on search - update
+
+commit 29a65d479491826fa9f6609785453766f14815b6
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 13:33:09 2020 +0000
+
+    Ordering the products by id
+
+commit 010046cf1867d59cfb93a3cfc37469455e18ae96
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 11:06:29 2020 +0000
+
+    add pg gem
+
+commit 3ad2eb9d83a91d5022c645243282905708c5e88b
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 10:58:59 2020 +0000
+
+    Gemfile update
+
+commit d9671dbd324b98a4f6ccc96c3182a5a98de15b0f
+Author: Sneha Sabu <snesheb@gmail.com>
+Date:   Mon Mar 9 10:31:29 2020 +0000
+
+    First commit
