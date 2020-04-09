@@ -1,0 +1,36 @@
+  
+!!! 5
+%html{lang: I18n.locale}
+  %head
+    = render "layouts/rails_admin/head"
+  %body.rails_admin
+    :css
+       {table.table.table-condensed.table-striped : display: none; }
+    #admin-js{:'data-i18n-options' => I18n.t("admin.js").to_json}
+    #loading.label.label-warning{style: 'display:none; position:fixed; right:20px; bottom:20px; z-index:100000'}= t('admin.loading')
+    %nav.navbar.navbar-default.navbar-fixed-top
+      = render "layouts/rails_admin/navigation"
+    .container-fluid
+      .row
+        .col-sm-3.col-md-2.sidebar-nav
+          = render "layouts/rails_admin/sidebar_navigation"
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2
+          .content{:'data-pjax-container' => true}
+            = render template: 'layouts/rails_admin/pjax'
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2
+          .content
+            %h1 Orders received minute-wise
+            = line_chart Order.group_by_minute(:created_at).count
+            %h1 Orders received day-wise
+            = pie_chart Order.group_by_day(:created_at).count
+            %h1 Orders received week-wise
+            = column_chart Order.group_by_day_of_week(:created_at, format: "%a").count
+            %h1 User registrations day wise
+            = line_chart Users.group(:users_id).group_by_day(:created_at).count
+            %h1 Prices of Brands
+            = pie_chart Products.group(:brand).limit('20').sum(:price)
+            %h1 Prices of Products
+            = bar_chart Products.group(:name).limit('20').sum(:price)
+            %h1 Count of Products
+            = column_chart Products.group(:name).count
+ 

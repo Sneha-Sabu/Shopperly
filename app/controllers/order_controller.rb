@@ -3,12 +3,17 @@ class OrderController < ApplicationController
   before_action :set_cart, only: [:new, :create]
   before_action :ensure_cart_isnt_empty, only: :new
   before_action :set_order, only: [:show, :edit, :update, :destroy]
+  before_action :admin_user, only: [:index]
+
+
 
   # GET /order
   # GET /order.json
   def index
     @order = Order.all
   end
+  
+  
 
   # GET /order/1
   # GET /order/1.json
@@ -86,5 +91,9 @@ class OrderController < ApplicationController
       if @cart.line_item.empty?
         redirect_to shopperly_index_url, notice: 'Your cart is empty'
       end
+    end
+    
+    def admin_user
+     redirect_to(shopperly_index_url, notice: 'You are not authorized to access this page') unless current_users.superadmin_role?  
     end
 end
