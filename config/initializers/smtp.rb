@@ -1,8 +1,9 @@
 ActionMailer::Base.smtp_settings = {
+  address: 'smtp.sendgrid.net',
+  port: 587,
   domain: 'shopperly.herokuapp.com',
-  address:        "smtp.sendgrid.net",
-  port:            587,
-  authentication: :plain,
-  user_name:      'apikey',
-  password:       ENV['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']
+  user_name: ENV['app164824422@heroku.com'],
+  password: ENV['aktgs4hx4370'],
+  authentication: :login,
+  enable_starttls_auto: true
 }
