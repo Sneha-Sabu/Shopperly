@@ -10,9 +10,25 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+      # Create the user from params
+      @users = Users.new(users_params)
+      if @users.save
+        # Deliver the signup email
+        UsersNotifierMailer.send_signup_email(@users).deliver
+        redirect_to(shopperly_index_url, :notice => 'User created')
+      else
+        render :action => 'new'
+      end
+  end
+
+  private
+
+  def users_params
+    params.require(:users).permit(:name, :email, :password, :login)
+  end
+
+
 
   # GET /resource/edit
   # def edit
@@ -25,9 +41,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # DELETE /resource
-  # def destroy
-  #   super
-  # end
+  def destroy
+     @users.destroy
+    respond_to do |format|
+      format.html { redirect_to shopperly_index_url, notice: 'Order was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
 
   # GET /resource/cancel
   # Forces the session data which is usually expired after sign
