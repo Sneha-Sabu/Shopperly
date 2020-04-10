@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-indicators li {
   cursor: pointer;
-  background: #e96b56;
+  background: #ecba19 !important;
   overflow: hidden;
   border: 0;
   width: 12px;
@@ -492,8 +492,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #e96b56;
-  background: #e96b56;
+  border: 2px solid #ecba19 !important;
+  background: #ecba19;
 }
 
 #hero .btn-get-started:hover {
@@ -744,8 +744,8 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #e96b56;
-  border-color: #e96b56;
+  background: #ecba19;
+  border-color: #ecba19;
 }
 
 .services .icon-box:hover .icon {
