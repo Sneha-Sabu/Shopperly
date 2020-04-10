@@ -1,4 +1,4 @@
-# Global Flood information - InfoFlood :shirt::handbag::shopping::ring:
+# E-Commerce website - Shopperly :shirt::handbag::shopping::ring:
 ###### *Developed by - @Sneha-Sabu - Student ID: 51987943*
 ### About the application:
 This is a Ruby on Rails application based on an open source dataset representing E-commerce product information found on https://data.world/promptcloud/product-details-on-flipkart-com/workspace/file?filename=flipkart_com-ecommerce_sample.csv.
