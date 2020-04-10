@@ -103,7 +103,7 @@ import "../stylesheets/application"
 import './bootstrap_custom.js'
 The remaining steps have been outlined in this tutorial: https://medium.com/@guilhermepejon/how-to-install-bootstrap-4-3-in-a-rails-6-app-using-webpack-9eae7a6e2832
 
-#### Application pages - Layouts
+## Application pages - Layouts
  
 1. Layout of the Homepage - Includes a list of Product descriptions and Application information.
 ![Homepage](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/homepage.jpg)
@@ -138,7 +138,7 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 11. Layout of the Admin dashboard page - Consists of various bar graphs, pie charts, line charts, etc. to display statistics.
 ![Admin](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Admin%20dashboard.jpg)
 
-#### Deployment instructions
+## Deployment instructions
 
 #### Github Setup Instructions
 
@@ -187,7 +187,7 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 2. heroku rake shopperly:seed_categories
 3. heroku rake shopperly:seed_products
 
-#### Security Measures
+## Security Measures
 1. Installing the gem 'activerecord-session_store' - A session store of the Active Record class and storing the session details in the database.
 2. Installing the gem 'brakeman' which is a vulnerability scanner designed for Ruby on Rails applications which scans the application and generates a report of any security issues present in the application.
 3. Set config.force_ssl = true in the config file to provide a secure connection over SSL.
@@ -195,8 +195,10 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 5. reset_session - The Devise gem installed for User management automatically resets or expires sessions on signing in and signing out of the site.
 6. protect_from_forgery with: :exception - Automatically added in the Application Controller, protects the site against forged requests and introduces a required security token in requests.
 7. Storing encrypted passwords - The Devise gem stores encrypted passwords instead of plain-text passwords.
+8. Installing the gem "recaptcha" - In order to mitigate Brute force attacks on accounts. You get two keys from the API, i.e. a public and a private key to be included in the Rails environment. Included on the registration page to add additional security. 
+9. Passwords - Requiring the user to enter the old password in order when changing it to make the process of changing passwords safe against CSRF 
 
-#### Testing
+## Testing
 
 #### Comments:
 
