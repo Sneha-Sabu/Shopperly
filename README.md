@@ -1,4 +1,4 @@
-# Global Flood information - InfoFlood :shirt::handbag::shopping::ring
+# E-Commerce website - Shopperly :shirt::handbag::shopping::ring:
 ###### *Developed by - @Sneha-Sabu - Student ID: 51987943*
 ### About the application:
 This is a Ruby on Rails application based on an open source dataset representing E-commerce product information found on https://data.world/promptcloud/product-details-on-flipkart-com/workspace/file?filename=flipkart_com-ecommerce_sample.csv.
@@ -43,37 +43,44 @@ ActiveSupport::Inflector.inflections do |inflect| <br/>
 inflect.clear <br/>
 inflect.singular(/$/i, '') <br/>
 end
-3. Create the scaffolds using the following commands:
-  * rails generate controller InfoFlood index
-  * rails generate scaffold Search long:decimal lat:decimal area:integer began:date ended:date dead:integer displaced:integer    maincause:string country:references
-  * rails generate scaffold Location long:decimal lat:decimal area:integer country:references
+3. Create scaffolds for the following:
+  * Cart
+  * Categories
+  * Countries
+  * Line Item
+  * Order
+  * Products
+  * Sessions
+  * Users
 4. Load the migration file into the database with the command:
   * rails db:migrate
-5. Configure the application by editing the /config/routes.rb file by adding the following code below the get line: <br/>
-  * root 'info_flood#index'
+5. Configure the application by editing the /config/routes.rb file by adding the following code below the get line:
+  * root 'shopperly#index'
 6. Display the required data using the relevant attribute names on the view files.
 7. Before running rails server, it’s necessary on some systems (including the cloud IDE) to allow connections to the local web server. To enable this, you should navigate to the file config/environments/development.rb and paste in the two extra lines shown <br/>
   #Allow connections to local server. <br/>
  config.hosts.clear
 8. Check that the application works by switching to the console and start the server with the command
-* rails server
+  * rails server
 
  #### Charts
- * Highcharts are used for generating interactive charts and graphs representing the Top 5 most affected and Top 10 least flood affected countries on the Statistics page of the application to provide the user with an insight based on the cumulative dataset. The charts have been generated following the instructions at the bottom of the page on https://homepages.abdn.ac.uk/b.scharlau/pages/practical-three-adding-models-to-the-travel-agent/. The charts displayed accurate counts of total number of floods recorded per country on github, however due to the database being different on Heroku faced some compatibility issues in terms of accurate counts.\
-Following steps are to be taken to install and run the highcharts on the application:
-* yarn add highcharts
-* yarn add jquery
-* yarn add –check files
+ * Chartkicks are used for generating interactive charts and graphs to represent the statistics related to Products, Orders, Users etc. on the Dashboard page of the application to provide the Admin user an insight on the cumulative dataset. The charts have been generated following the instructions at the bottom of the page on https://homepages.abdn.ac.uk/b.scharlau/pages/practical-three-adding-models-to-the-travel-agent/. The charts display accurate counts of statistics such as orders placed each minute, each day, each week, etc.
+Following steps are to be taken to install and run Chartkick on the application:
+* Add gem "chartkick" in the Gemfile and run bundle install.
+* yarn add chartkick chart.js
+* Add the following lines in the app/javascript/packs/application.js file:
+  require("chartkick")
+  require("chart.js")
 
 #### Dataset importing with Rake file
 To start developing the application in order to display the data the following steps have to be taken:
-* rails g task country seed_country
-* Running the above command will create a file under lib/tasks/country.rake which can be modified by specifying tasks and details of each database table and the column names to be inserted in each table from the excel.
+* rails g task shopperly seed_shopperly
+* Running the above command will create a file under lib/tasks/shopperly.rake which can be modified by specifying tasks and details of each database table and the column names to be inserted in each table from the excel.
 
 Run the following three commands one by one to import data into each table:
-* rails g task country seed_country
-* rails g task country seed_location
-* rails g task country seed_search
+* rake shopperly:seed_countries
+* rake shopperly:seed_categories
+* rake shopperly:seed_products
 
 #### Maps
 This application uses Mapbox with Leaflet for displaying locations of each recorded Flood.
@@ -92,19 +99,9 @@ jQuery: 'jquery/src/jquery',\
 Popper: ['popper.js', 'default']\
 })
 * Go to app/javascript/packs/application.js and add:\
-import "bootstrap"\
-import "../stylesheets/application"\
-document.addEventListener("turbolinks:load", () => {    
-    $('[data-toggle="tooltip"]').tooltip()\
-    $('[data-toggle="tooltip"]').popover()\
-})
-* Create a directory in app/javascript called stylesheets and add a stylesheet called application.scss. Then open the file and add:\
-@import "~bootstrap/scss/bootstrap";
-* Check layout view if it contains this link:\
-<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-Then add above it:\
-<%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+import "../stylesheets/application"
+import './bootstrap_custom.js'
+The remaining steps have been outlined in this tutorial: https://medium.com/@guilhermepejon/how-to-install-bootstrap-4-3-in-a-rails-6-app-using-webpack-9eae7a6e2832
 
 #### Application pages - Layouts
  
@@ -143,17 +140,16 @@ Then add above it:\
 
 1. Create a repository for your project on Github
 2. Upload the project to the repository created
-3. Send invitations to collaborators to join your project repository 
-4. cd your project
-5. copy the link of your GitHub repository 
-6. run git clone url repository to make a copy of the project repository
-7. git branch name – to create a working branch
-8. git pull – to update working branch before making changes 
-9. git add -A  to add all changes made 
-10. git commit -m “comment”- to commit it 
-11. git push - to push the change from working branch to master branch
-12. open GitHub and create a pull request
-13. review changes and merge it 
+3. cd your project
+4. copy the link of your GitHub repository 
+5. run git clone url repository to make a copy of the project repository
+6. git branch name – to create a working branch
+7. git pull – to update working branch before making changes 
+8. git add -A  to add all changes made 
+9. git commit -m “comment”- to commit it 
+10. git push - to push the change from working branch to master branch
+11. open GitHub and create a pull request
+12. review changes and merge it 
  
 #### To update your working branch, you need to follow these steps:
 
@@ -179,40 +175,16 @@ Then add above it:\
 12.	git commit -m “init”
 13.	git status – to check the status of the local master branch before deployment 
 14.	git push heroku master ( to push your local master branch to heroku)
-15.	heroku rake db:migrate – to migrate  database to heroku
+15.	heroku rake db:migrate – to migrate database to heroku
 16.	heroku open – to open your application on heroku
 
 #### To import the data of the tables on Heroku you need to run the following 3 commands:
-1. heroku rake country:seed_search
-2. heroku rake location:seed_country 
-3. heroku rake search:seed_location
+1. heroku rake shopperly:seed_countries
+2. heroku rake shopperly:seed_categories
+3. heroku rake shopperly:seed_products
 
 
 
 
-**InfoFlood 2020 © Copyright**
-**Under Terms and Agreements of University of Aberdeen and Software distrubution**
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Shopperly 2020 © Copyright**
+**Under Terms and Agreements of University of Aberdeen and Software distribution**
