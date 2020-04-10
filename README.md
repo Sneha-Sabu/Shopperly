@@ -105,14 +105,36 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 
 #### Application pages - Layouts
  
-1.	This is our homepage background photo
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print1.png)
+1. This is the homepage background photo
+![Homepage](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/homepage.jpg)
 
-2. Photo displaying the impact of floods
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print2.png)
+2. Layout of the Categories page
+![Categories](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/categories.jpg)
  
-3. A video documenting the impact of floods in Kerala, India
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print3.png)
+3. Layout of the Products page
+![Products](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/products.jpg)
+ 
+4. Layout of the Product details page
+![Products](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Product%20details.jpg)
+
+5. Layout of the Cart page
+![Cart](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Cart.jpg)
+
+6. Layout of the Order details page
+![Order details](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Order%20details.jpg)
+
+7. Layout of the Order summary page
+![Order details](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Order%20summary.jpg)
+
+8. Layout of the Profile page
+![Profile](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Profile.jpg)
+
+9. Layout of the Signup page
+![Signup](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/signup.jpg)
+
+10. Layout of the Login page
+![Login](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/login.jpg)
+
  
 4. A bar graph which displays 20 countries and the number of places within them affected by floods.\
 **Comment: Prior to deploying our application on Heroku, on our Github master branch the following bar graph displayed accurate individual counts of floods in each country. Following the deployment of our application to Heroku, we have encountered a compatability issue with displaying the accurate total counts of floods within the bar graph.**
