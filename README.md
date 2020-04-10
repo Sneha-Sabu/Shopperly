@@ -209,6 +209,21 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 
 2. Orders page on the Rails Admin Dashboard displays an error therefore, added a link to the Order application page on the sidebar menu.
 
+#### References:
+1. https://www.programmer-books.com/wp-content/uploads/2018/07/Agile_Web_Development_with_Rails_5.pdf
+2. https://guides.rubyonrails.org/security.html
+3. https://github.com/sferik/rails_admin/wiki
+4. https://altalogy.com/blog/rails-6-user-accounts-with-3-types-of-roles/
+5. https://www.railstutorial.org/book/static_pages#sec-getting_started_with_testing
+6. https://github.com/sferik/rails_admin/wiki
+7. https://homepages.abdn.ac.uk/b.scharlau/pages/practical-six-using-capybara-for-tests/
+8. https://homepages.abdn.ac.uk/b.scharlau/pages/rails-pages/
+9. https://github.com/howardmann/Tutorials/blob/master/Rails_Shopping_Cart.md
+10. https://medium.com/@guilhermepejon/how-to-install-bootstrap-4-3-in-a-rails-6-app-using-webpack-9eae7a6e2832
+11. https://github.com/ankane/chartkick
+12. https://web-crunch.com/posts/ruby-on-rails-ecommerce-music-shop
+13. https://github.com/heartcombo/devise/wiki/How-To:-Use-Recaptcha-with-Devise
+
 
 
 **Shopperly 2020 © Copyright**
