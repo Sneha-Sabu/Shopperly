@@ -103,38 +103,42 @@ import "../stylesheets/application"
 import './bootstrap_custom.js'
 The remaining steps have been outlined in this tutorial: https://medium.com/@guilhermepejon/how-to-install-bootstrap-4-3-in-a-rails-6-app-using-webpack-9eae7a6e2832
 
-#### Application pages - Layouts
+## Application pages - Layouts
  
-1.	This is our homepage background photo
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print1.png)
+1. Layout of the Homepage - Includes a list of Product descriptions and Application information.
+![Homepage](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/homepage.jpg)
 
-2. Photo displaying the impact of floods
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print2.png)
+2. Layout of the Categories page - Includes a list of Categories of products available.
+![Categories](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/categories.jpg)
  
-3. A video documenting the impact of floods in Kerala, India
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print3.png)
+3. Layout of the Products page - Includes a list of Products. Includes a search functionality which enables the users to find more information about any product of their choice.
+![Products](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/products.jpg)
  
-4. A bar graph which displays 20 countries and the number of places within them affected by floods.\
-**Comment: Prior to deploying our application on Heroku, on our Github master branch the following bar graph displayed accurate individual counts of floods in each country. Following the deployment of our application to Heroku, we have encountered a compatability issue with displaying the accurate total counts of floods within the bar graph.**
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print4.png)
+4. Layout of the Product details page - Includes detailed product description about any selected product.
+![Products](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Product%20details.jpg)
 
-5. The first pie chart shown displays the countries with the highest number of floods and the second one shows top 10 counries least affected by floods.
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print5.png)
+5. Layout of the Cart page - Includes a list of selected products to be purchased.
+![Cart](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Cart.jpg)
 
-6. Our search page includes a chronological information of floods around the world and there is a search bar which enables users to find more information about flood events by country.\ 
-**Comments: Prior to deploying our application to Heroku, on our Github master branch the search functionality returned query results of keyword search (countries). Following the deployment of our application to Heroku, we have encountered an issue with the functionality of the search bar displaying the query results.** 
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print6.png)
+6. Layout of the Order details page - Includes a form to store the Order details and place the order. 
+![Order details](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Order%20details.jpg)
 
- 
-7. This is a map which displays the location of a flood along with the start and end date, number of deaths and cause of the event.
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print7.png)
+7. Layout of the Order summary page - Displays a summary of the Order placed along with a map to display the shipping location of the intended order.
+![Order details](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Order%20summary.jpg)
 
-8. This is a page that returns the country specific flood details of each location as a JSON format.
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print8.png)
+8. Layout of the Profile page - Displays the account details of the user and provides the option to edit their details.
+![Profile](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Profile.jpg)
 
+9. Layout of the Signup page - Displays registration details required to register on the website.
+![Signup](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/signup.jpg)
 
+10. Layout of the Login page - Displays a form for existing users to login to the website. 
+![Login](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/login.jpg)
 
-#### Deployment instructions
+11. Layout of the Admin dashboard page - Consists of various bar graphs, pie charts, line charts, etc. to display statistics.
+![Admin](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Admin%20dashboard.jpg)
+
+## Deployment instructions
 
 #### Github Setup Instructions
 
@@ -182,6 +186,24 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 1. heroku rake shopperly:seed_countries
 2. heroku rake shopperly:seed_categories
 3. heroku rake shopperly:seed_products
+
+## Security Measures
+1. Installing the gem 'activerecord-session_store' - A session store of the Active Record class and storing the session details in the database.
+2. Installing the gem 'brakeman' which is a vulnerability scanner designed for Ruby on Rails applications which scans the application and generates a report of any security issues present in the application.
+3. Set config.force_ssl = true in the config file to provide a secure connection over SSL.
+4. Rotating Encrypted and Signed Cookies Configurations - for changing cookie configurations and ensuring old cookies aren't immediately invalid enabling users to visit the site, get their cookie read with an old configuration and rewritten with any new change.
+5. reset_session - The Devise gem installed for User management automatically resets or expires sessions on signing in and signing out of the site.
+6. protect_from_forgery with: :exception - Automatically added in the Application Controller, protects the site against forged requests and introduces a required security token in requests.
+7. Storing encrypted passwords - The Devise gem stores encrypted passwords instead of plain-text passwords.
+8. Installing the gem "recaptcha" - In order to mitigate Brute force attacks on accounts. You get two keys from the API, i.e. a public and a private key to be included in the Rails environment. Included on the registration page to add additional security. 
+9. Passwords - Requiring the user to enter the old password in order when changing it to make the process of changing passwords safe against CSRF 
+
+## Testing
+
+#### Comments:
+
+Sendgrid
+Orders page on the Admin Dashboard
 
 
 
