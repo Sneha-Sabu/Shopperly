@@ -1,4 +1,4 @@
-# Global Flood information - InfoFlood :ocean::house:
+# Global Flood information - InfoFlood :shirt::handbag::shopping::ring
 ###### *Developed by - @Sneha-Sabu - Student ID: 51987943*
 ### About the application:
 This is a Ruby on Rails application based on an open source dataset representing E-commerce product information found on https://data.world/promptcloud/product-details-on-flipkart-com/workspace/file?filename=flipkart_com-ecommerce_sample.csv.
@@ -37,7 +37,7 @@ gem "recaptcha" | gem 'devise_zxcvbn'
 #### Configuration and running the application
 Listed below are the requirements to configure the application: (All commands are as per how they are to be written in the terminal. If requested to add something to a folder it will be specificly written):
 1. Create a new application using the following command:
-  rails new InfoFlood
+  rails new Shopperly
 2. Rails attempts to pluralize singular words while creating scaffolds. If you want to remove all pluralizations add the following code to the /config/initializers/inflections.rb file <br/>
 ActiveSupport::Inflector.inflections do |inflect| <br/>
 inflect.clear <br/>
