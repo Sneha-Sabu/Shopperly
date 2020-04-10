@@ -36,6 +36,7 @@ gem 'hightop'
 gem 'activerecord-session_store'
 gem "recaptcha"
 gem 'bootstrap', '~> 4.4.1'
+gem "brakeman"
 
 
 
