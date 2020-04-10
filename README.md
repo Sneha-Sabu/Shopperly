@@ -194,17 +194,20 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 4. Rotating Encrypted and Signed Cookies Configurations - for changing cookie configurations and ensuring old cookies aren't immediately invalid enabling users to visit the site, get their cookie read with an old configuration and rewritten with any new change.
 5. reset_session - The Devise gem installed for User management automatically resets or expires sessions on signing in and signing out of the site.
 6. protect_from_forgery with: :exception - Automatically added in the Application Controller, protects the site against forged requests and introduces a required security token in requests.
-7. Storing encrypted passwords - The Devise gem stores encrypted passwords instead of plain-text passwords.
+7. Storing encrypted passwords - The Devise gem stores encrypted passwords instead of plain-text passwords. It uses bcrypt for password hashing.
 8. Installing the gem "recaptcha" - In order to mitigate Brute force attacks on accounts. You get two keys from the API, i.e. a public and a private key to be included in the Rails environment. Included on the registration page to add additional security. 
 9. Passwords - Requiring the user to enter the old password in order when changing it to make the process of changing passwords safe against CSRF 
 
 ## Testing
+1. Unit testing of Models (Products,  - Calling methods and comparing what it returned against what we expected it to return.
+2. Function testing of Controllers - To verify that the model, view, and controller work well together.
+3. Test Fixtures 
+4. BDD Testing using RSpec
 
 #### Comments:
+1. While working on the application, referred to https://sendgrid.com/docs/for-developers/sending-email/rubyonrails/ and https://devcenter.heroku.com/articles/sendgrid to integrate emailing through Sendgrid on Heroku, however the error received on the heroku logs is https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/error%20emailing.jpg
 
-Sendgrid
-Orders page on the Admin Dashboard
-
+2. Orders page on the Rails Admin Dashboard displays an error therefore, added a link to the Order application page on the sidebar menu.
 
 
 
