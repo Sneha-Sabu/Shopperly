@@ -54,7 +54,7 @@ end
   * Users
 4. Load the migration file into the database with the command:
   * rails db:migrate
-5. Configure the application by editing the /config/routes.rb file by adding the following code below the get line: <br/>
+5. Configure the application by editing the /config/routes.rb file by adding the following code below the get line:
   * root 'shopperly#index'
 6. Display the required data using the relevant attribute names on the view files.
 7. Before running rails server, it’s necessary on some systems (including the cloud IDE) to allow connections to the local web server. To enable this, you should navigate to the file config/environments/development.rb and paste in the two extra lines shown <br/>
@@ -64,7 +64,7 @@ end
   * rails server
 
  #### Charts
- * Highcharts are used for generating interactive charts and graphs representing the Top 5 most affected and Top 10 least flood affected countries on the Statistics page of the application to provide the user with an insight based on the cumulative dataset. The charts have been generated following the instructions at the bottom of the page on https://homepages.abdn.ac.uk/b.scharlau/pages/practical-three-adding-models-to-the-travel-agent/. The charts displayed accurate counts of total number of floods recorded per country on github, however due to the database being different on Heroku faced some compatibility issues in terms of accurate counts.\
+ * Highcharts are used for generating interactive charts and graphs to represent the statistics related to Products, Orders, Users etc. on the Dashboard page of the application to provide the Admin user an insight on the cumulative dataset. The charts have been generated following the instructions at the bottom of the page on https://homepages.abdn.ac.uk/b.scharlau/pages/practical-three-adding-models-to-the-travel-agent/. The charts displayed accurate counts of total number of floods recorded per country on github, however due to the database being different on Heroku faced some compatibility issues in terms of accurate counts.\
 Following steps are to be taken to install and run the highcharts on the application:
 * yarn add highcharts
 * yarn add jquery
