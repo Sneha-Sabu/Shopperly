@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<section id="featured" class="featured">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">  
 <h1>Categories</h1>
 
 <table>
@@ -14,9 +17,15 @@
     <% @categories.each do |categories| %>
       <tr>
         <td><%= categories.name %></td>
-        <td><%= link_to 'Show', categories %></td>
+        
       </tr>
     <% end %>
   </tbody>
 </table>
 
+
+
+</div>
+</div>
+</div>
+</section><!-- End Featured Section -->
