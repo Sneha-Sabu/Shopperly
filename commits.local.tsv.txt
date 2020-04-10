@@ -1,3 +1,44 @@
+e6ddecd	Sneha Sabu	Fri Apr 10 21:50:11 2020	Final testing
+2cfab17	Sneha Sabu	Fri Apr 10 21:26:59 2020	Final testing
+9116e4b	Sneha Sabu	Fri Apr 10 21:26:11 2020	Final testing
+4416c6b	Sneha Sabu	Fri Apr 10 20:39:59 2020	Update README.md
+d17f0d1	Sneha Sabu	Fri Apr 10 20:27:05 2020	Update README.md
+f9a95e1	Sneha Sabu	Fri Apr 10 20:00:32 2020	Update README.md
+e66e92f	Sneha Sabu	Fri Apr 10 19:50:36 2020	Update README.md
+3098c4c	Sneha Sabu	Fri Apr 10 19:43:17 2020	Screenshots for Readme
+0c17573	Sneha Sabu	Fri Apr 10 19:27:24 2020	Final layout edits
+2c88ad1	Sneha Sabu	Fri Apr 10 19:24:02 2020	Final layout edits
+6856d77	Sneha Sabu	Fri Apr 10 18:58:36 2020	Final layout edits
+58be65a	Sneha Sabu	Fri Apr 10 18:26:23 2020	Remove additional scaffold
+ac5962c	Sneha Sabu	Fri Apr 10 18:24:49 2020	Update README.md
+2c61c60	Sneha Sabu	Fri Apr 10 18:23:50 2020	Update README.md
+81b5fc3	Sneha Sabu	Fri Apr 10 17:48:45 2020	Update README.md
+af759e9	Sneha Sabu	Fri Apr 10 17:23:03 2020	Update README.md
+c7543f2	Sneha Sabu	Fri Apr 10 16:04:59 2020	Remove additional scaffold
+eb09fa8	Sneha Sabu	Fri Apr 10 15:51:03 2020	Recaptcha issue
+d84e9fb	Sneha Sabu	Fri Apr 10 15:47:47 2020	Recaptcha issue
+2bc50db	Sneha Sabu	Fri Apr 10 15:43:08 2020	Recaptcha issue
+84b4ded	Sneha Sabu	Fri Apr 10 15:35:52 2020	Recaptcha issue
+0e9f2fa	Sneha Sabu	Fri Apr 10 15:17:22 2020	Update README.md
+cf0b897	Sneha Sabu	Fri Apr 10 14:44:10 2020	Update README.md
+6339c03	Sneha Sabu	Fri Apr 10 12:17:00 2020	Recaptcha error message
+526aab7	Sneha Sabu	Fri Apr 10 12:12:51 2020	Password authentication on signup form
+67e6b85	Sneha Sabu	Fri Apr 10 12:09:02 2020	Password authentication on signup form
+864777d	Sneha Sabu	Fri Apr 10 12:05:05 2020	Password authentication on signup form
+8154151	Sneha Sabu	Fri Apr 10 11:39:47 2020	Captcha
+a7d85d6	Sneha Sabu	Fri Apr 10 11:15:03 2020	Security measures
+ec36699	Sneha Sabu	Fri Apr 10 02:17:09 2020	Final layout edits
+74523b3	Sneha Sabu	Thu Apr 9 23:28:50 2020	Emailing through Sendgrid
+a847c6b	Sneha Sabu	Thu Apr 9 23:27:12 2020	Emailing through Sendgrid
+7eaf32d	Sneha Sabu	Thu Apr 9 23:25:24 2020	Emailing through Sendgrid
+cab0add	Sneha Sabu	Thu Apr 9 23:23:48 2020	Emailing through Sendgrid
+c52fad7	Sneha Sabu	Thu Apr 9 23:19:29 2020	Emailing through Sendgrid
+cc4db3e	Sneha Sabu	Thu Apr 9 23:00:42 2020	Emailing through Sendgrid
+ddd2be5	Sneha Sabu	Thu Apr 9 22:37:06 2020	Emailing through Sendgrid
+da926cf	Sneha Sabu	Thu Apr 9 22:28:43 2020	Emailing through Sendgrid
+29f1c65	Sneha Sabu	Thu Apr 9 22:13:21 2020	Emailing through Sendgrid
+9d36d4c	Sneha Sabu	Thu Apr 9 20:48:03 2020	Emailing through Sendgrid
+790bd6a	Sneha Sabu	Thu Apr 9 18:35:10 2020	Dashboard analytics page
 f2386de	Sneha Sabu	Thu Apr 9 02:37:22 2020	Restricting access of Orders page and Dashboard analytics page
 75e3c2f	Sneha Sabu	Thu Apr 9 02:33:31 2020	Restricting access of Orders page and Dashboard analytics page
 9bd0c92	Sneha Sabu	Wed Apr 8 23:42:23 2020	Deleting the cart after placing an order and resetting it
