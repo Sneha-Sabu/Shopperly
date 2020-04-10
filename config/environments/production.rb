@@ -44,7 +44,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+   config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -133,4 +133,12 @@ config.serve_static_assets = false
 config.assets.compress = true
   # Generate digests for assets URLs  
 config.assets.digest = true
+end
+
+
+Rails.application.config.action_dispatch.signed_cookie_digest = "SHA256"
+
+
+Rails.application.config.action_dispatch.cookies_rotations.tap do |cookies|
+  cookies.rotate :signed, digest: "SHA1"
 end

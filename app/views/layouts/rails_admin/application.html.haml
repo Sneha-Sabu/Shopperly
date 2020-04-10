@@ -17,7 +17,6 @@
         .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2
           .content{:'data-pjax-container' => true}
             = render template: 'layouts/rails_admin/pjax'
-            = scatter_chart Order.pluck(:id, :countries_id), xtitle: "Number of Orders", ytitle: "Country id"
             %br/
             %hr/
             %h1 Orders received minute-wise
@@ -38,4 +37,9 @@
             %hr/
             %h1 User Registrations week-wise
             = area_chart Users.group_by_day(:created_at).count
+            %br/
+            %hr/
+            %h1 Orders received country-wise
+            = scatter_chart Order.pluck(:id, :countries_id), xtitle: "Number of Orders", ytitle: "Country id"
+
             

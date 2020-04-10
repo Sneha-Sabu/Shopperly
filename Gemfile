@@ -33,6 +33,9 @@ gem 'sendgrid-ruby'
 gem "chartkick"
 gem 'groupdate'
 gem 'hightop'
+gem 'activerecord-session_store'
+
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

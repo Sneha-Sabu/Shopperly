@@ -1,5 +1,6 @@
 class CountriesController < ApplicationController
   before_action :set_countries, only: [:show, :edit, :update, :destroy]
+  before_action :admin_user, only: [:index]
 
   # GET /countries
   # GET /countries.json
@@ -70,5 +71,8 @@ class CountriesController < ApplicationController
     # Only allow a list of trusted parameters through.
     def countries_params
       params.require(:countries).permit(:name, :latitude, :longitude)
+    end
+    def admin_user
+     redirect_to(shopperly_index_url, notice: 'You are not authorized to access this page') unless current_users.superadmin_role?  
     end
 end
