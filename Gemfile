@@ -35,6 +35,7 @@ gem 'groupdate'
 gem 'hightop'
 gem 'activerecord-session_store'
 gem "recaptcha"
+gem 'devise_zxcvbn'
 
 
 
