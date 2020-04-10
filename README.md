@@ -187,6 +187,22 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 2. heroku rake shopperly:seed_categories
 3. heroku rake shopperly:seed_products
 
+#### Security Measures
+1. Installing the gem 'activerecord-session_store' - A session store of the Active Record class and storing the session details in the database.
+2. Installing the gem 'brakeman' which is a vulnerability scanner designed for Ruby on Rails applications which scans the application and generates a report of any security issues present in the application.
+3. Set config.force_ssl = true in the config file to provide a secure connection over SSL.
+4. Rotating Encrypted and Signed Cookies Configurations - for changing cookie configurations and ensuring old cookies aren't immediately invalid enabling users to visit the site, get their cookie read with an old configuration and rewritten with any new change.
+5. reset_session - The Devise gem installed for User management automatically resets or expires sessions on signing in and signing out of the site.
+6. protect_from_forgery with: :exception - Automatically added in the Application Controller, protects the site against forged requests and introduces a required security token in requests.
+7. Storing encrypted passwords - The Devise gem stores encrypted passwords instead of plain-text passwords.
+
+#### Testing
+
+#### Comments:
+
+Sendgrid
+Orders page on the Admin Dashboard
+
 
 
 
