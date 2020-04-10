@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :cart
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: { registrations: 'users/registrations' }
-  resources :customers
   resources :countries
   resources :products
   resources :categories
