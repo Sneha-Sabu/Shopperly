@@ -8,9 +8,10 @@
 
 .rails_admin .table { display: none; }
 
+input { width: 300px; }
 
 .notice.col-12 {
-     font-size: 1.3rem;  background-color: #e96b56; 
+     font-size: 1.3rem;  background-color: #ffc107; 
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
@@ -28,6 +29,8 @@
 
 
 }
+
+input[type="submit"] { background-color: #ffc107; color: black; margin: 10px; padding: 10px; width: 20%; border-radius: 50px;}
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
@@ -52,12 +55,12 @@ border-collapse: collapse;
  }
 
  .list_image {
- width: 100px !important;
+ width: 300px !important;
  height: auto;
  }
 
  .list_description {
- width: 60%;
+ width: 40%;
 
  dl {
  margin: 0;
@@ -75,14 +78,14 @@ margin: 0;
  }
 
  .list_actions {
- font-size: x-small;
- text-align: right;
- padding-left: 1em;
+ width: 10%;
  }
 
  .list_line_even {
- background: #e0f8f8;
+ background: #dddddda6;
  }
+ 
+ td.list_actions a { font-size: 16px; color: blue; font-weight: bold; }
 
  .list_line_odd {
  background: #ffc107;

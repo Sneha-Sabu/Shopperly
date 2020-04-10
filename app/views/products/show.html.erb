@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<section id="featured" class="featured">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">   
 <p>
   <strong>Name:</strong>
   <%= @products.name %>
@@ -11,13 +14,12 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @products.image %>
+  <%= image_tag @products.image , :class => "style_image" %>
 </p>
 
 <p>
   <strong>Price:</strong>
-  <%= @products.price %>
+  <%= number_to_currency(@products.price) %>
 </p>
 
 <p>
@@ -30,7 +32,12 @@
   <%= @products.categories.name %>
 </p>
 
-<%= button_to 'Add to cart', line_item_index_path(products_id: @products), class: 'button is-warning add-to-cart' %>
+<div><%= button_to 'Add to cart', line_item_index_path(products_id: @products), class: 'button is-warning add-to-cart' %></div>
 
-<%= link_to 'Edit', edit_products_path(@products) %> |
-<%= link_to 'Back', products_index_path %>
+<div><%= link_to 'Back', products_index_path %> </div>
+
+
+</div>
+</div>
+</div>
+</section><!-- End Featured Section -->

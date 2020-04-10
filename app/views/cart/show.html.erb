@@ -1,15 +1,18 @@
+<section id="featured" class="featured">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">   
 <h2>Your Cart</h2>
-<div class="keep-shopping pv1 mt4 has-text-right">
-  <%= link_to 'Keep Shopping', products_index_url, class: 'button is-warning' %>
-</div>
+
 <hr />
 <section class="section">
   <%= render(@cart.line_item) %>
 
   <div class="columns">
     <div class="column">
+      
+      <%= button_to "Place order", new_order_path, method: :get %>
       <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
-      <%= button_to "Checkout", new_order_path, method: :get %>
 
     </div>
     <div class="column total has-text-right">
@@ -19,3 +22,9 @@
     </div>
   </div>
 </section>
+
+
+</div>
+</div>
+</div>
+</section><!-- End Featured Section -->

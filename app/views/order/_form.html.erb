@@ -10,33 +10,41 @@
       </ul>
     </div>
   <% end %>
+<table class="products" width="100%" cellpadding="5px">
+  <tr>
+    <div class="field">
+    <td> <%= form.label :name %></td>
+    <td> <%= form.text_field :name, size: 40 %></td>
+    </div>
+  </tr>
+   <tr>
+    <div class="field">
+    <td>  <%= form.label :address %></td>
+    <td> <%= form.text_area :address,  cols: 40 %></td>
+    </div>
+  </tr>
+  <tr>
+    <div class="field">
+    <td>  <%= form.label :email %></td>
+    <td>  <%= form.email_field :email, size: 40 %></td>
+    </div>
+  </tr>
+  <tr>
+    <div class="field">
+    <td>  <%= form.label :pay_type %></td>
+    <td>  <%= form.select :pay_type, Order.pay_type.keys, prompt: 'Select a payment method' %></td>
+    </div>
+  </tr>
+  <tr>
+    <div class="field">
+    <td>  <%= form.label :countries_id %></td>
+    <td>  <%= form.collection_select(:countries_id, Countries.all, :id, :name ) %></td>
+    </div>
+  </tr>
+ 
+</table>  
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, size: 40 %>
-  </div>
 
-  <div class="field">
-    <%= form.label :address %>
-    <%= form.text_area :address, rows: 3, cols: 40 %>
-  </div>
-
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.email_field :email, size: 40 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :pay_type %>
-    <%= form.select :pay_type, Order.pay_type.keys, prompt: 'Select a payment method' %>
-  </div>
-
-  
-  <div class="field">
-  <%= form.label :countries_id %>
-  <%= form.collection_select(:countries_id, Countries.all, :id, :name ) %>
-  </div>
 
 
   <div class="actions">

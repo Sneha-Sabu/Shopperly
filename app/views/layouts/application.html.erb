@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css' rel='stylesheet' />
+ 
     <title>Shopperly</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -51,9 +54,6 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
@@ -61,8 +61,17 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <h3>About Eterna</h3>
-            <p>Map </p>
+            <h3>ADDRESS</h3>
+            
+            <div id='map' style='width: 400px; height: 200px; '></div>
+            <script>
+            L.mapbox.accessToken = 'pk.eyJ1Ijoic25lc2hlYiIsImEiOiJjazZ0eWI2bWgwM3djM3RtczB6Zm1hajA1In0.3puNkWvosmAZdTYx2-ACcQ';
+            var map = L.mapbox.map('map')
+                .setView([57.15976,-2.09324], 5)
+                .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+                var marker = L.marker([57.15976,-2.09324]).addTo(map);   
+                
+            </script>
           </div>
 
         </div>
