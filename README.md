@@ -105,56 +105,38 @@ The remaining steps have been outlined in this tutorial: https://medium.com/@gui
 
 #### Application pages - Layouts
  
-1. This is the homepage background photo
+1. Layout of the Homepage - Includes a list of Product descriptions and Application information.
 ![Homepage](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/homepage.jpg)
 
-2. Layout of the Categories page
+2. Layout of the Categories page - Includes a list of Categories of products available.
 ![Categories](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/categories.jpg)
  
-3. Layout of the Products page
+3. Layout of the Products page - Includes a list of Products. Includes a search functionality which enables the users to find more information about any product of their choice.
 ![Products](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/products.jpg)
  
-4. Layout of the Product details page
+4. Layout of the Product details page - Includes detailed product description about any selected product.
 ![Products](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Product%20details.jpg)
 
-5. Layout of the Cart page
+5. Layout of the Cart page - Includes a list of selected products to be purchased.
 ![Cart](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Cart.jpg)
 
-6. Layout of the Order details page
+6. Layout of the Order details page - Includes a form to store the Order details and place the order. 
 ![Order details](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Order%20details.jpg)
 
-7. Layout of the Order summary page
+7. Layout of the Order summary page - Displays a summary of the Order placed along with a map to display the shipping location of the intended order.
 ![Order details](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Order%20summary.jpg)
 
-8. Layout of the Profile page
+8. Layout of the Profile page - Displays the account details of the user and provides the option to edit their details.
 ![Profile](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Profile.jpg)
 
-9. Layout of the Signup page
+9. Layout of the Signup page - Displays registration details required to register on the website.
 ![Signup](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/signup.jpg)
 
-10. Layout of the Login page
+10. Layout of the Login page - Displays a form for existing users to login to the website. 
 ![Login](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/login.jpg)
 
- 
-4. A bar graph which displays 20 countries and the number of places within them affected by floods.\
-**Comment: Prior to deploying our application on Heroku, on our Github master branch the following bar graph displayed accurate individual counts of floods in each country. Following the deployment of our application to Heroku, we have encountered a compatability issue with displaying the accurate total counts of floods within the bar graph.**
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print4.png)
-
-5. The first pie chart shown displays the countries with the highest number of floods and the second one shows top 10 counries least affected by floods.
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print5.png)
-
-6. Our search page includes a chronological information of floods around the world and there is a search bar which enables users to find more information about flood events by country.\ 
-**Comments: Prior to deploying our application to Heroku, on our Github master branch the search functionality returned query results of keyword search (countries). Following the deployment of our application to Heroku, we have encountered an issue with the functionality of the search bar displaying the query results.** 
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print6.png)
-
- 
-7. This is a map which displays the location of a flood along with the start and end date, number of deaths and cause of the event.
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print7.png)
-
-8. This is a page that returns the country specific flood details of each location as a JSON format.
-![Homepage](https://github.com/vyaraodorova95/InfoFlood-/blob/master/app/assets/images/Print8.png)
-
-
+11. Layout of the Admin dashboard page - Consists of various bar graphs, pie charts, line charts, etc. to display statistics.
+![Admin](https://github.com/Sneha-Sabu/Shopperly/blob/master/app/assets/images/Admin%20dashboard.jpg)
 
 #### Deployment instructions
 
